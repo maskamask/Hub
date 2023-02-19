@@ -1,5 +1,5 @@
 -- change link for ui lib
-local Maska = loadstring(game:HttpGet("link"))()
+local Maska = loadstring(game:HttpGet("https://raw.githubusercontent.com/maskamask/Hub/main/UI.lua"))()
 
 -- Put this on the top
 local test = Maska.new({
