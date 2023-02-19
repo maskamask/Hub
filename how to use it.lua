@@ -3,15 +3,15 @@ local Maska = loadstring(game:HttpGet("https://raw.githubusercontent.com/maskama
 
 -- Put this on the top
 local test = Maska.new({
-    Name = "Name"; -- Name on the top
-    ConfigFolder = "FolderName"; -- folder
-    Credit = "Credit: Maska";-- credit
-    Color = Color3.fromRGB(164, 53, 90); -- color
-    FullName = "Name Script"; -- Full name of the script
-    UseLoader = true; -- IF you want to load
-    Bind = "LeftControl"; -- Keybind to hide the UI
-    CheckKey = function(e) -- keysystem
-        return e == "password" -- the password
+    Name = "Name"; 
+    ConfigFolder = "FolderName"; 
+    Credit = "Credit: Maska";
+    Color = Color3.fromRGB(164, 53, 90); 
+    FullName = "Name Script"; 
+    UseLoader = true; 
+    Bind = "LeftControl"; 
+    CheckKey = function(e)
+        return e == "password" 
     end;
     Discord = "https://discord.gg/"
 })
