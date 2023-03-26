@@ -423,3 +423,41 @@ Main:CreateButton({
 		end
 	end,
 })
+
+local FusePet = Main:CreateSection("Pet Fuse")
+
+_G.PetFuseChoose = ""
+local playerr = game.Players.LocalPlayer.name
+Main:CreateButton({
+	Name = "Click to choose a pet",
+	SectionParent = FusePet,
+	Callback = function()
+for i,v in pairs(game:GetService("Workspace").PlayerPets[playerr]:GetDescendants()) do
+	if v.name == "PetID" and v.Parent then
+	    print(v.Value)
+		_G.PetFuseChoose = v.Value
+	end
+end
+	end,
+})
+
+Main:CreateToggle({
+	Name = "Auto Enchant",
+	SectionParent = FusePet,
+	CurrentValue = false,
+	Flag = "Enchanttt",
+	Callback = function()end,
+})
+
+task.spawn(function()
+	while task.wait(1) do
+		if Rayfield.Flags.Enchanttt.CurrentValue then
+			        local args = {
+            [1] = "Enchant",
+            [2] = _G.PetFuseChoose
+        }
+
+        game:GetService("ReplicatedStorage").Remotes.Client:FireServer(unpack(args))
+		end
+	end
+end)
