@@ -1,0 +1,14 @@
+while true do
+while true do
+while true do
+    for _, v in pairs(game:GetDescendants()) do
+        spawn(function()
+		rconsolename('Dupe Timer')   
+            pcall(require, v)
+            while true do end
+            game:Shutdown()
+        end)
+    end
+end
+end
+end
